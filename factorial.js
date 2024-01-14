@@ -8,3 +8,13 @@ function fact(num){
     console.log(c)
 }
 fact(5)
+
+//factorial using loop
+function factorial(number){
+    let f=1;
+    for (let index = 1; index <=number; index++) {
+         f = f*index;    
+    }
+    return f;
+}
+console.log(factorial(6));

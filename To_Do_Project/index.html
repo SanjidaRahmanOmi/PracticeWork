@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <style>
+       .container{
+        height: 500px;
+        width: 600px;
+        background-color:rgb(241, 240, 255);
+        border-radius: 3px;
+        flex-direction: column;
+        border: 2px solid violet;
+        display: flex;
+        justify-content: space-evenly;
+       }  
+       #header{
+        text-align: center;
+       }
+       .addtask{
+        height: 30px;
+        width: 500px;
+        background-color: white;
+        border: 1px solid violet;
+        margin-left: 50px;
+       }
+       #form1{
+        text-align: center;
+        margin-top: 5px;
+        align-items: center;
+       }
+       .fulltask{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       }
+       .incomplete{
+        height: 200px;
+        width: 220px;
+        background-color: white;
+        border: 1px solid violet;
+       }
+       #check{
+        margin-left: 20px;
+       }
+       .complete{
+        height: 110px;
+        width: 220px;
+        background-color: white;
+        border: 1px solid violet;
+       }
+    </style>
+</head>
+<body>
+<div class="container">
+   <div id="header">
+    <img src="todo.avif"height="50px"width="50px">
+    <h1>TO DO LIST</h1></div> 
+
+    <div class="addtask">
+    <form id="form1">
+        <label for="task">Add New Task</label>
+        <input type="text" id="task" name="task">
+        <button type="submit">Add Task</button>
+    </form>
+    </div>
+
+    <div class="fulltask">
+    <div class="incomplete">
+        <h3 style="text-align: center;">INCOMPLETE TASKS</h3>
+        <hr>
+        <form id="check">
+           <input type="checkbox" id="task1"name="task1"value="Task1">
+           <label for="task1">Task Name 1</label><br><br>
+           <input type="checkbox" id="task2"name="task2"value="Task2">
+           <label for="task2">Task Name 2</label><br><br>
+           <input type="checkbox" id="task3"name="task3"value="Task3">
+           <label for="task3">Task Name 3</label>
+        </form>
+    </div>
+
+    <div class="complete">
+       <h3 style="text-align: center;">COMPLETED TASKS</h3> 
+       <hr>
+       <div style="margin-left: 40px;">
+       <label for="delete">Task Name</label>
+       <button type="submit" >Delete</button></div>
+    </div>
+    </div>
+
+</div>
+</body>
+</html>

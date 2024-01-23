@@ -1,3 +1,5 @@
+const { Readline } = require("readline/promises");
+
 //factorial using reduce function
 function fact(num){
     let arr = Array.from(Array(num+1).keys());

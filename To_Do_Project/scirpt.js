@@ -5,4 +5,13 @@ form1.addEventListener("submit",(event)=>{
     event.preventDefault();
     let newTaskValue = document.getElementById('task').value;
 
+    let newCheckbox = document.createElement('input');
+    newCheckbox.type = 'checkbox';
+    newCheckbox.id = 'task' + (document.querySelectorAll('#check input[type="checkbox"]').length + 1); 
+
+    let newLabel = document.createElement('label');
+    newLabel.htmlFor = newCheckbox.id;
+    newLabel.textContent = newTaskValue;
+
+    
 })

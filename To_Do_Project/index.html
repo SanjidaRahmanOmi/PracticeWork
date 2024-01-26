@@ -35,7 +35,7 @@
        .fulltask{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
        }
        .incomplete{
         height: 200px;
@@ -64,7 +64,7 @@
     <form id="form1">
         <label for="task">Add New Task</label>
         <input type="text" id="task" name="task">
-        <button type="submit">Add Task</button>
+        <button type="submit"id=btn>Add Task</button>
     </form>
     </div>
 
@@ -77,8 +77,6 @@
            <label for="task1">Task Name 1</label><br><br>
            <input type="checkbox" id="task2"name="task2"value="Task2">
            <label for="task2">Task Name 2</label><br><br>
-           <input type="checkbox" id="task3"name="task3"value="Task3">
-           <label for="task3">Task Name 3</label>
         </form>
     </div>
 
@@ -87,10 +85,11 @@
        <hr>
        <div style="margin-left: 40px;">
        <label for="delete">Task Name</label>
-       <button type="submit" >Delete</button></div>
+       <button style="background-color:red"type="submit"id="delete" >Delete</button></div>
     </div>
     </div>
 
 </div>
+<script src="scirpt.js"></script>
 </body>
 </html>

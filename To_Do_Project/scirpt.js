@@ -13,5 +13,11 @@ form1.addEventListener("submit",(event)=>{
     newLabel.htmlFor = newCheckbox.id;
     newLabel.textContent = newTaskValue;
 
+    document.getElementById('check').appendChild(newCheckbox);
+    document.getElementById('check').appendChild(newLabel);
+    let lineBreak = document.createElement('br');
+    document.getElementById('check').appendChild(lineBreak);
+
+    document.getElementById('task').value = '';
     
 })

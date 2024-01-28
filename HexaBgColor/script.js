@@ -11,3 +11,6 @@ document.getElementById('btn').addEventListener('click', function () {
     document.body.style.backgroundColor = randomColor;
    
 });
+document.getElementById('copy').addEventListener('click', function () {
+    navigator.clipboard.writeText(hexa.value);
+});

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change BG color</title>
+
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            background-color: bisque;
+            margin-top: 320px;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h2{
+            color: black;
+            text-shadow: 2px 2px 4px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <h2 id="text">Change The Background Color By Clicking The Following Button</h2> 
+  <div class="Input">
+  <form>
+    <input type="text"id="hexa">
+  </form> 
+</div>
+  <br/>
+  <button id="btn">CHANGE COLOR</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

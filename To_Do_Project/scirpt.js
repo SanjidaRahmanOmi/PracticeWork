@@ -19,5 +19,8 @@ form1.addEventListener("submit",(event)=>{
     document.getElementById('check').appendChild(lineBreak);
 
     document.getElementById('task').value = '';
+
+});
+
+
     
-})
